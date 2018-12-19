@@ -55,7 +55,7 @@ class VideoComponent extends PureComponent {
   componentWillUpdate(nextProps) {
     if (nextProps.currentCluster !== this.props.currentCluster) {
       this.playerLib.trigger('setCluster', {
-        clusters: this.getClusters(nextProps.currentCluster),
+        clusters: this.getClusters(nextProps.currentCluster).clusters,
       });
     }
   }
