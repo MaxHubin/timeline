@@ -1,0 +1,42 @@
+{
+  "id": 2,
+  "fps": 25,
+  "url": "http://192.168.42.46:8080/Two_scenes_many_plans.mp4",
+  "clusterAnalysis": [
+    {
+      "mode": "2",
+      "clusters": [
+        {
+          "clusterClass": 1,
+          "clusterColor": "#000",
+          "clusterStartFrame": 0
+        },
+        {
+          "clusterClass": 2,
+          "clusterColor": "#eee",
+          "clusterStartFrame": 604
+        }
+      ]
+    },
+    {
+      "mode": "3",
+      "clusters": [
+        {
+          "clusterClass": 1,
+          "clusterColor": "#000",
+          "clusterStartFrame": 0
+        },
+        {
+          "clusterClass": 2,
+          "clusterColor": "#eee",
+          "clusterStartFrame": 1080
+        },
+        {
+          "clusterClass": 3,
+          "clusterColor": "#000",
+          "clusterStartFrame": 1163
+        }
+      ]
+    }
+  ]
+}

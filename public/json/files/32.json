@@ -1,0 +1,42 @@
+{
+  "id": 3,
+  "fps": 25.05,
+  "url": "http://192.168.42.46:8080/full_kino.mp4",
+  "clusterAnalysis": [
+    {
+      "mode": "2",
+      "clusters": [
+        {
+          "clusterClass": 1,
+          "clusterColor": "#000",
+          "clusterStartFrame": 0
+        },
+        {
+          "clusterClass": 2,
+          "clusterColor": "#eee",
+          "clusterStartFrame": 12268
+        },
+      ]
+    },
+    {
+      "mode": "3",
+      "clusters": [
+        {
+          "clusterClass": 1,
+          "clusterColor": "#000",
+          "clusterStartFrame": 0
+        },
+        {
+          "clusterClass": 2,
+          "clusterColor": "#eee",
+          "clusterStartFrame": 17904
+        },
+        {
+          "clusterClass": 3,
+          "clusterColor": "#000",
+          "clusterStartFrame": 42315
+        }
+      ]
+    }
+  ]
+}

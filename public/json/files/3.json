@@ -1,0 +1,34 @@
+{
+  "id": 4,
+  "fps": 25,
+  "url": "http://192.168.42.46:3000/json/3.mp4",
+  "clusterAnalysis": [
+    {
+      "mode": 2,
+      "clusters": [
+        {
+          "clusterClass": 1,
+          "clusterColor": "#000",
+          "clusterStartFrame": 1
+        },
+        {
+          "clusterClass": 2,
+          "clusterColor": "#ccc",
+          "clusterStartFrame": 10000
+        }
+      ]
+    }
+  ],
+  "videoInfo": {
+    "timescale": 25051,
+    "timeToSample": {
+      "sampleCounts": [
+        150145
+      ],
+      "sampleDeltas": [
+        1000
+      ]
+    },
+    "startTime": 0.021333
+  }
+}
