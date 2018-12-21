@@ -252,8 +252,8 @@ body
 
 .video-js .vjs-control.vjs-play-control, .timelineRight, .timelineLeft {
   position: absolute;
-  width: 4em;
-  margin-right: 50px;
+  width: 2em;
+  margin-right: 55px;
   height: 100%;
   right: 50%;
 }
@@ -280,6 +280,10 @@ body
 
 .vjs-wave-surfer-control {
   margin-top: 20px;
+  height: 50px;
+}
+.vjs-wave-surfer-control div {
+  background-size: 1025px 50px !important;
 }
 
 .video-js .vjs-volume-panel .vjs-volume-control.vjs-slider-active.vjs-volume-vertical .vjs-volume-bar,

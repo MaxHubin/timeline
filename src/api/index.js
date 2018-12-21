@@ -15,7 +15,15 @@ export async function loadMenu(dispatch) {
   dispatch({ type: LOAD_MENU_SUCCESS, data });
 }
 
+const responseStore = {};
+
 export async function loadPlayerData(dispatch, id) {
-  const data = await fetchData(`${config.hostJson}/files/${id}.json`);
+  let data;
+  if (responseStore[id]) {
+    data = responseStore[id];
+  }else {
+    data = await fetchData(`${config.hostJson}/files/${id}.json`);
+    responseStore[id] = data;
+  }
   dispatch({ type: LOAD_PLAYER_SUCCESS, id, data });
 }

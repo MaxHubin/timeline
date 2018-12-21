@@ -6,11 +6,16 @@ const initialState = {
   currentCluster: 1,
 };
 window.mp4Helper = mp4Helper;
-function getTimestamps(videoInfo) {
+const timestampStore = {};
+function getTimestamps(id, videoInfo) {
+  if (timestampStore[id]) {
+    return timestampStore[id];
+  }
   const options = {
     commonOffset: 0.0001,
   };
   const timestaps = mp4Helper.generateTimestamps(videoInfo, options).map(timestamp => timestamp + videoInfo.startTime);
+  timestampStore[id] = timestaps;
   return timestaps;
 }
 
@@ -22,7 +27,7 @@ export default function player(state = initialState, action) {
         ...state,
         data: {
           ...action.data,
-          timestamps: getTimestamps(action.data.videoInfo),
+          timestamps: getTimestamps(action.data.id, action.data.videoInfo),
         },
         currentCluster: action.data.clusterAnalysis[0].mode,
       };

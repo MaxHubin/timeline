@@ -12,16 +12,17 @@ class WaveSurfer extends Component {
   }
 
   onLoad = () => {
-    const mediaElt = document.querySelector('video');
-    this.wavesurfer.load(mediaElt.cloneNode(true), this.audioData);
+    this.el().innerHTML = `<div style="width:100%;height:100%; background:url(${this.audioData})"></div>`;
+    //const mediaElt = document.querySelector('video');
+    //this.wavesurfer.load(mediaElt.cloneNode(true), this.audioData);
   }
 
   createEl() {
     const el = super.createEl('div', {
       className: 'vjs-wave-surfer-control',
     });
-    el.innerHTML = '';
-    const wavesurferContainer = super.createEl('div', {
+    //el.innerHTML = `<div style="width:100%;height:100%; background:url(${this.audioData})"></div>`;
+    /*const wavesurferContainer = super.createEl('div', {
       id: 'wavesurfer',
     });
     el.appendChild(wavesurferContainer);
@@ -33,7 +34,7 @@ class WaveSurfer extends Component {
       height: '50',
       barHeight: 4,
       interact: false,
-    });
+    });*/
 
     return el;
   }
@@ -42,3 +43,4 @@ class WaveSurfer extends Component {
 Component.registerComponent('WaveSurfer', WaveSurfer);
 
 export default WaveSurfer;
+

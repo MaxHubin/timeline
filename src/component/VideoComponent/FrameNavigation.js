@@ -26,8 +26,8 @@ class FrameNavigation extends Component {
   handleChangeFrame = (diff) => {
     let currentFrame = 0;
     const currentTime = this.player().currentTime();
-    for (let i = 0; i < (this.timestamps.length - 1); i += 1) {
-      if ((this.timestamps[i] < (currentTime + 0.000001)) && (this.timestamps[i + 1] > (currentTime + 0.000001))) {
+    for (let i = 0; i < (this.timestamps.length - 2); i += 1) {
+      if (this.timestamps[i + 1] > (currentTime + 0.000001)) {
         currentFrame = i;
         break;
       }

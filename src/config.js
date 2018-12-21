@@ -1,3 +1,3 @@
 export default {
-  hostJson: 'http://192.168.42.46:3000/json',
+  hostJson: 'http://timeline-gubin.dev-php7.oxagile.com/json',
 };
